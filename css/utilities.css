@@ -6,7 +6,7 @@
 }
 
 .card {
-  background-color: #016bed;
+  background-color: var(--secondary-color);
   border-radius: 10px;
   box-shadow: 0 3px 10px rgba(255, 255, 255, 0.3);
   padding: 20px;
@@ -22,10 +22,10 @@
   display: inline-block;
   padding: 10px 30px;
   cursor: pointer;
-  background-color: #fff;
+  background-color: var(--light-color);
   border: none;
   border-radius: 5px;
-  color: #016bed;
+  color: var(--secondary-color);
   font-weight: bold;
 }
 
@@ -35,16 +35,35 @@
 
 .btn-outline {
   background-color: transparent;
-  border: 1px solid white;
+  border: 1px solid var(--light-color);
 }
 
-.bg-primary, .btn-primary {
-    background-color: #106bed;
-    color: white;
+.bg-primary,
+.btn-primary {
+  background-color: var(--primary-color);
+  color: var(--light-color);
+}
+
+.bg-secondary,
+.btn-secondary {
+  background-color: var(--secondary-color);
+  color: var(--light-color);
+}
+
+.bg-dark,
+.btn-dark {
+  background-color: var(--dark-color);
+  color: var(--secondary-color);
+}
+
+.bg-light,
+.btn-light {
+  background-color: var(--light-color);
+  color: var(--dark-color);
 }
 
 ::placeholder {
-  color: white;
+  color: var(--light-color);
   opacity: 1;
 }
 
@@ -115,41 +134,41 @@
 
 /* Padding */
 .py-1 {
- padding: 1rem 0;
+  padding: 1rem 0;
 }
 
 .py-2 {
- padding: 1.5rem 0;
+  padding: 1.5rem 0;
 }
 
 .py-3 {
- padding: 2rem 0;
+  padding: 2rem 0;
 }
 
 .py-4 {
- padding: 3rem 0;
+  padding: 3rem 0;
 }
 
 .py-5 {
- padding: 4rem 0;
+  padding: 4rem 0;
 }
 
 .p-1 {
- padding: 1rem;
+  padding: 1rem;
 }
 
 .p-2 {
- padding: 1.5rem;
+  padding: 1.5rem;
 }
 
 .p-3 {
- padding: 2rem;
+  padding: 2rem;
 }
 
 .p-4 {
- padding: 3rem;
+  padding: 3rem;
 }
 
 .p-5 {
- padding: 4rem;
+  padding: 4rem;
 }

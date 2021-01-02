@@ -2,6 +2,9 @@
 
 :root {
   --primary-color: black;
+  --secondary-color: #016bed;
+  --dark-color: #031b44;
+  --light-color: #ffffff;
 }
 
 /* Base */
@@ -14,7 +17,7 @@
 body {
   font-family: "Lato", sans-serif;
   /* background-color: var(--primary-color); */
-  background-color: white;
+  background-color: var(--light-color);
   /* color: white; */
   line-height: 1.6;
 }
@@ -26,7 +29,7 @@ ul {
 a {
   font-weight: bold;
   text-decoration: none;
-  color: #016bed;
+  color: var(--secondary-color);
 }
 
 h1,
@@ -49,9 +52,9 @@ img {
 .navbar {
   background-color: rgb(63, 63, 63);
   background-color: var(--primary-color);
-  color: white;
+  color: var(--light-color);
   height: 90px;
-  border-bottom: 1px solid #016bed;
+  border-bottom: 1px solid var(--secondary-color);
   /* border-top: 4px solid red; */
   /* border-left: 4px solid red; */
   /* border-bottom: 1px solid white;*/
@@ -70,7 +73,7 @@ img {
   opacity: 0.8;
   font-weight: bold;
   font-size: 18px;
-  color: white;
+  color: var(--light-color);
   padding: 10px;
   margin: 0 5px;
   /* outline: auto; */
@@ -78,13 +81,13 @@ img {
 
 .navbar a:hover {
   opacity: 1;
-  border-bottom: 2px white solid;
+  border-bottom: 2px var(--light-color) solid;
 }
 
 .logo {
   font-weight: bold;
   font-size: 50px;
-  color: #016bed;
+  color: var(--secondary-color);
 }
 
 .logo:hover {
@@ -95,9 +98,9 @@ img {
 .showcase {
   height: 400px;
   background-color: var(--primary-color);
-  color: white;
+  color: var(--light-color);
   position: relative;
-  border-bottom: 2px solid #016bed;
+  border-bottom: 2px solid var(--secondary-color);
 }
 
 .showcase h1 {
@@ -125,16 +128,16 @@ img {
 }
 
 .showcase-form .form-control {
-  background-color: #016bed;
+  background-color: var(--secondary-color);
   margin: 30px 0;
 }
 
 .showcase-form input[type="text"],
 .showcase-form input[type="email"] {
-  color: white;
-  background-color: #016bed;
+  color: var(--light-color);
+  background-color: var(--secondary-color);
   border: 0;
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid var(--dark-color);
   width: 100%;
   padding: 3px;
   font-size: 16px;
@@ -151,16 +154,16 @@ img {
 .showcase::before,
 .showcase::after {
   content: "";
-  background-color: white;
+  background-color: var(--light-color);
   position: absolute;
   height: 100px;
   bottom: -70px;
   right: 0;
   left: 0;
-  transform: skewY(-3deg);
-  -webkit-transform: skewY(-3deg);
-  -moz-transform: skewY(-3deg);
-  -ms-transform: skewY(-3deg);
+  transform: skewY(-odeg);
+  -webkit-transform: skewY(-0deg);
+  -moz-transform: skewY(-0deg);
+  -ms-transform: skewY(-0deg);
 }
 
 /* Stats */
@@ -169,20 +172,24 @@ img {
 }
 
 .stats-heading {
-  max-width: 500px;
-  margin: auto;
+  font-size: 25px;
 }
 
 .stats .grid h3 {
+  color: var(--dark-color);
   font-size: 35px;
 }
 
 .stats .grid p {
   font-size: 20px;
   font-weight: bold;
-  color: #016bed;
+  color: var(--secondary-color);
 }
 
+.stats .grid {
+  border: 2px solid var(--primary-color);
+  padding-top: 30px;
+}
 /* Cli */
 .cli .grid {
   grid-template-columns: repeat(3, 1fr);
@@ -195,7 +202,7 @@ img {
 }
 
 .cli h3 {
-  color: white;
+  color: var(--light-color);
 }
 
 /* Cloud */
