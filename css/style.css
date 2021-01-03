@@ -303,6 +303,14 @@ pre {
   font-weight: 500;
 }
 
+.docs-main .border {
+  border: 2px solid black;
+}
+
+.docs-main .bb {
+  border-bottom: 1px solid black;
+}
+
 /* Footer */
 .footer .social a {
   margin: 0 10px;
